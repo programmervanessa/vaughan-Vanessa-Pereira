@@ -1,0 +1,3 @@
+Aprendizados da Semana
+
+Nesta primeira semana conhecemos a Labenu, aprendemos a usar o Slack, canal de dúvidas, anúncios. Vimos o cronograma da semana, fizemos uma dinâmica em grupo para conhecer nossos colegas da turma, aula de diversidade, atividades de Setup, instalamos o Terminal e aprendemos os comandos ls, cd, mkadir, cat, mv, rm, head, tail e grep e ja colocamos em prática através da atividade Crime na Linha de Comando aonde localizamos o criminoso **Jeremy**. Também aprendemos a utilizar o GitHub, utilizamos os comandos de git como status, git branch, git commite, git push e subimos o projeto.
