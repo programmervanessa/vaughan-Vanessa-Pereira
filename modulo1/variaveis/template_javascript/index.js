@@ -44,3 +44,8 @@ c = a;
 a = b;
 b = c;
 console.log(a, b, c)
+
+const primeiroValor = 3
+const segundoValor = 4
+const resultado = primeiroValor + segundoValor
+console.log(resultado)
