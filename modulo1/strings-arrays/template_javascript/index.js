@@ -25,3 +25,30 @@ const email = prompt("Digite o seu e-mail");
 const mensagem = `O e-mail do usuário ${email} foi cadastrado com sucesso! Seja bem vindo (a)`
 
 console.log(mensagem)
+
+
+//2
+var comidas = ["macarrão" ,  "sushi" ,  "yakissoba" ,  "shimeji" , "pizza"]
+console.log(comidas)
+
+
+console.log(comidas[0])
+console.log(comidas[1])
+console.log(comidas[2])
+console.log(comidas[3])
+console.log(comidas[4])
+
+comidas[1] = prompt("Qual a sua comida preferida?")
+
+
+console.log(comidas)
+
+function minhafuncao(variavel) {
+   return variavel * 5
+}
+
+console.log(minhafuncao(2))
+console.log(minhafuncao(10))
+
+
+
