@@ -16,12 +16,57 @@ i. Verdade
 ii. Verdade
 iii. Verdade
 */
+ 
+//Exercícios de escrita de código//
 
-let textoDoUsuario = prompt("Insira um texto");
+//1
 
-const outraFuncao = function(texto) {
-	return texto.toLowerCase().includes("cenoura")
+//a)
+
+// function sobreMim() {
+
+//     console.log('Meu nome é Vanessa, tenho 34 anos, moro em São José dos Campos e sou contadora')
+
+// }
+
+//   sobreMim()
+
+//   //b)
+
+//   function novoParamento() {
+
+// const nomme = "Vanessa"
+// const iddade = "34"
+// const cidade = "São José dos Campos"
+// const profissao = "contadora"
+
+// console.log(`Meu nome é ${nomme}, tenho ${iddade} anos, moro em ${cidade} e sou ${profissao}.`)
+
+//   }
+
+// novoParamento()
+
+//2
+//a)
+
+// function numeros(num1, nume2) {
+// const soma = num1 + nume2
+// console.log(soma)
+// }
+
+// numeros(10, 20)
+
+// //b)
+// function numeros(num3, nume4) {
+//     const somas = num3 + nume4
+//     console.log(somas)
+//     }
+
+
+function calculartriangulo(altura, largura) {
+    const area = (altura * largura) / 2
+    console.log(area)
 }
 
-const resposta = outraFuncao(textoDoUsuario)
-console.log(resposta)
+calculartriangulo(10,12)
+
