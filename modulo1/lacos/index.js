@@ -25,11 +25,27 @@ c) Por fim, imprima o array com os nomes dos bichinhos no console.
 */
 
 const quantosBichinhosDeEstimacao = Number(prompt("Quantos bichinhos de estimação você tem?"))
+const array = []
 
-if(quantosBichinhosDeEstimacao ===0){
-  console.log("Que pena! Você não sabe o que está perdendo, adote um bichinho!")
-console.log(quantosBichinhosDeEstimacao)
-}
+   
+    if( quantosBichinhosDeEstimacao=== 0) {
+        console.log("Que pena! Você não sabe o que está perdendo, adote um bichinho!")
+    }    
+    else {
+        let array = []
+        let i = 0
+        while(i < quantosBichinhosDeEstimacao){
+            let qualOnome = prompt("Que legal! Qual o nome do (s) seu (s) bichinho (s) ?")
+            array[i] = qualOnome
+            i++
+        }
+        console.log(array)
+    
+    }
+    
+          
+    
+
 
 /* 
 2. Considere que você tenha acesso a um array  (chamado de 'array original') que é composto somente
@@ -43,4 +59,3 @@ d) Escreva um programa que crie um novo array contendo strings, da seguinte form
    i é: numero". Depois, imprima este novo array.
 e) Escreva um programa que imprima no console o maior e o menor números contidos no array original.
 */
-
