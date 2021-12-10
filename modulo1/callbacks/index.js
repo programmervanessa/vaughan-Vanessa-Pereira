@@ -31,6 +31,7 @@ valor "Chijo". Foi usado para essa operação o comando "filter":
 /*
 1. Dado o seguinte array de cachorrinhos que são clientes de um pet shop, realize 
 as operações pedidas nos itens abaixo utilizando as funções de array map e filter:
+*/
 
 const pets = [
    { nome: "Lupin", raca: "Salsicha"},
@@ -41,14 +42,38 @@ const pets = [
    { nome: "Caramelo", raca: "Vira-lata"},
 ]
 
-a) Crie um novo array que contenha apenas o nome dos doguinhos
-b) Crie um novo array apenas com os cachorros salsicha
-c) Crie um novo array que possuirá mensagens para enviar para todos os clientes que 
+
+//a) Crie um novo array que contenha apenas o nome dos doguinhos
+
+/*const arrayDogsName = pets.map((item) => {
+return item.nome
+})*/
+//console.log(arrayDogsName)
+
+//b) Crie um novo array apenas com os cachorros salsicha
+
+/*const arrayDogsSalsicha = pets.filter((item, index, array) => {
+    return item.raca === "Salsicha"
+})*/
+//console.log(arrayDogsSalsicha)
+
+/*c) Crie um novo array que possuirá mensagens para enviar para todos os clientes que 
 são poodles. A mensagem deve ser: "Você ganhou um cupom de desconto de 10% para tosar 
-o/a [NOME]!"
-*/
+o/a [NOME]!"*/
 
+const mensagemPoodle = pets
 
+.filter((item, index,array) => 
+item.raca === "poodle"
+
+.map((poodle) => `Você ganhou um cupom de desconto de 10% para tosar seu pet ${nome}`)
+
+)
+
+console.log(mensagemPoodle)
+
+   
+   
 
 /*
 2. Dado o seguinte array de produtos, realize as operações pedidas nos itens abaixo 
@@ -72,5 +97,6 @@ b) Crie um novo array que contenha um objeto com o nome e o preço de cada item,
 aplicando 5% de desconto em todos eles
 c) Crie um novo array que contenha apenas os objetos da categoria Bebidas
 d) Crie um novo array que contenha apenas os objetos cujo nome contenha a palavra "Ypê"
-e) Crie um novo array onde cada item é uma frase "Compre [NOME] por [PREÇO]". Esse array deve conter frases apenas dos itens cujo nome contenha a palavra "Ypê"
+e) Crie um novo array onde cada item é uma frase "Compre [NOME] por [PREÇO]". Esse array
+deve conter frases apenas dos itens cujo nome contenha a palavra "Ypê"
 */
