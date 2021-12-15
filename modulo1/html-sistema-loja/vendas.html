@@ -4,41 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adicionar Produto</title>
+    <title>Controle de Vendas</title>
 </head>
 <body>
 
     <header>
-        <h4>  
-         <a href="http://127.0.0.1:5500/index.html">Página Inicial</a>
-         <a href="ctrl-estoque.html">Controle de Estoque</a>
-         <a href="funcionarios.html">Funcionários</a>
-         <a href="login.html">Login</a>
-        </h4>
+        <a href="http://127.0.0.1:5500/index.html">Sair</a>
+        <a href="historico-de-vendas.html">Histórico de Vendas</a>
     </header>
 
     <div>
         <p>Thor´s Toy Outlet</p>
     </div>
     
-   
-    <h2>Vendas</h2>
+    <h2>Adicionar Produto</h2>
     <form action="">
         <div>
             <label for="codigo-do-produto">Código do Produto: </label>
-            <input type="number" id="Código do Produto" name="Código do Produto">
+            <input type="number" id="codigo-do-produto" name="codigo-do-produto">
         </div>
         
         <div>
-            <label for="descricao">Descrição do produto: </label>
+            <label for="quatidade-vendida">Quantidade Vendida: </label>
             <!-- Adicione o id apropriado para o input abaixo -->
-            <input type="text" id="" name="descrição">
+            <input type="number" id="quantidade-vendida" name="quantidade-vendida">
         </div>
         
         <div>
-            <label for="preco">Preço (em R$): </label>
+            <label for="descontos">Valor do Desconto (em R$): </label>
             <!-- Adicione o id apropriado e o type para receber números abaixo -->
-            <input type="text" id="" name="preço">
+            <input type="number" id="descontos" name="descontos">
+        </div>
+
+        <div>
+            <label for="acrescimos">Valor do Acrescimo (em R$): </label>
+            <!-- Adicione o id apropriado e o type para receber números abaixo -->
+            <input type="number" id="acrescimos" name="acrescimos">
         </div>
         
         <div>
@@ -49,7 +50,7 @@
 
         <div class="form-add">
             <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
-            <button type="">Adicionar</button>
+            <button type="button">Adicionar</button>
         </div>
 
     </form>
