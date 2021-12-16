@@ -16,6 +16,19 @@ h2 {
     text-align: center;
 }
 
+.container {
+   padding-top: 150px;
+}
+
+li{
+    width: 250px;
+    margin: 0 auto;    
+}
+
+ol {
+    list-style-type: decimal;    
+}
+
 input {
     height: 20px;
     width: 500px;
