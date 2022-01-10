@@ -121,7 +121,9 @@ table {
 }
 
 td {
-    border-style: ;
+    font-family: 'Tinos', serif;
+    text-align: center;
+    align-items: center;
 }
 
 td button {
@@ -155,8 +157,9 @@ border-style: dotted;
     border-radius: 5px;
     font-size: 10px;
     color: black;
-}
+    }
 
 #back-button:hover {
-    background-color: #635a3d
+    background-color: #635a3d;
+    align-self: center;
 }
