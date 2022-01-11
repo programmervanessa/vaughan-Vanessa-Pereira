@@ -10,7 +10,7 @@ Esse repositório vai acompanhar vocês até o final do curso, para mantermos a 
 │   └── nome-do-projeto
 |
 ├── modulo2
-│   ├── nome-da-aula
+│   ├── Intrudução ao React + JSX
 │   ├── nome-da-aula
 │   ├── nome-da-aula
 │   ├── nome-da-aula
