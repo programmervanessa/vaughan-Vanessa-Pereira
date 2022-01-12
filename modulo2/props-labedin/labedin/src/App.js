@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import CardGrande from './components/imagens';
+import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
 
 function App() {
@@ -9,9 +9,9 @@ function App() {
       <div className="page-section-container">
         <h2>Dados pessoais</h2>
         <CardGrande 
-          imagem="thorEeu.jpg" 
+          imagem="https://uploads-ssl.webflow.com/5d640f4558306be99cf47a0e/5dd57846babb597b77c6bb1d_PerfilFuture4_cor.png" 
           nome="Vanessa Dias Pereira" 
-          descricao="Oi, meu nome é Vanessa Dias, sou estudante de programação na Labenu. Tenho um doguinho muito fofo e no nome dele é Thor"
+          descricao="Oi,eu sou a Vanessa. Sou estudante de programação na Labenu.Tenho um doguinho muito fofo chamado Thor."
         />
         
         <ImagemButton 
@@ -25,13 +25,13 @@ function App() {
         <CardGrande 
           imagem="https://s3.amazonaws.com/future4.com.br/static/headf4-c492117ca2373dc85ca81bf715b3dc2a.png" 
           nome="Labenu" 
-          descricao="Formando desenvolvedores para o mercado de trabalho!" 
+          descricao="Ralando como já feito antes, mas desta forma de um jeito diferente. A vida é um desafio em cada etapa, e sei que desta vez também irei conseguir!" 
         />
         
         <CardGrande 
           imagem="https://imagens.canaltech.com.br/empresas/4418.400.jpg" 
-          nome="NASA" 
-          descricao="Apontando defeitos." 
+          nome="Mazars" 
+          descricao="Posso dizer que eu limpava  latrinas. Vivia para consertar os erros cometidos pelos outros analistas." 
         />
       </div>
 
