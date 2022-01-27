@@ -1,92 +1,39 @@
-import axios from "axios";
-import React from 'react'
-import "./styles.css";
+import React from "react";
+import TelaCadastro from "./components/TelaCadastro";
+import TelaListaUsuarios from "./components/TelaListaUsuarios";
 
 export default class App extends React.Component {
-  AllUsers={
-    none: []
+  state = {
+    telaAtual: "cadastro"
+  }
+  
+  escolheTela = () => {
+    switch (this.state.telaAtual){
+      case "cadastro":
+        return <TelaCadastro irParaLista={this.irParaLista}/>
+      case "lista":
+        return <TelaListaUsuarios irParaCadastro={this.irParaCadastro}/>  
+      default:
+        return <div>Página não encontrada</div>  
+    }
+
   }
 
-  componentDidMount()
-  {
-    getAllUsers()
-    this.getAllUsers()
+  irParaCadastro = () => {
+    this.setState({telaAtual: "cadastro"})
   }
 
-  getAllUsers = () => {
-    axios.get(
-        "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
-        {
-          Headers: {
-            Authorization: "vanessa-dias-vaughan"
-          }
-        }
-      )
-  
-      .then((response)=> {
-        // this.setState({AllUsers:response.data.result.list})
-        alert("Usuário criado com sucesso!".response.data")
-      })
-  
-      .catch((error) => {
-        alert("Não foi possível criar usuário", 
-        error.response.data);
-      });
-  };
+  irParaLista = () => {
+    this.setState({telaAtual: "lista"})
 
-creatUsers=()=>{
-
-const url = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users"
-
-const body = {
-  "name": " ",
-  "email": " "
-}
-  
-
-const axioConfig = {
-
-  Headers:
-
-  {
-  Authorization:"vanessa-dias-vaughan"
   }
-
-axios.post(url,body,axioConfig)
-
-.then((resp)=>{
-  console.log(resp.response.date)
-  alert("Usuário adicionado com sucesso!")  
-})
-
-.catch((err)=>{
-  console.log(err.response,data)
-  alert("Por favor, preencha todos os campos para adicionar usuário")
-})
-}
-// creatUsers()
-
-  render(){
-    const novoUsuario= this.state.creatUsers.map(
-      (creatUsers)=>{
-        return(
-          <div>
-            <p>{creatUsers.name}</p>
-          </div>
-        )
-      }
-    )
-    console.log("estado", this.state)
-    return (
-      <div className="App">
-        <button onClick={this.getAllUsers()}>Chamar</button>
+     
+    render(){
+      return (
+        <div>
+          {this.escolheTela()}          
         </div>
-    );
-  }
+      )
+    }
+  
 }
-
-
-
-
-
-
