@@ -21,20 +21,17 @@ export default function App() {
   };
 
   //funções
-  const onClickCurtida = () => {
-
-    //logica
-    if (curtido = ) {
-
-    }
+  const onClickCurtida = (event) => {
+    setCurtido(event.target.value)    
   };
+  console.log(curtido)
 
   const onClickComentario = () => {
   };
 
   const enviarComentario = (comentario) => {
   }
-  }
+  
 
   return (
     <PostContainer>
