@@ -113,7 +113,7 @@ const indiceDaTarefaRealizada = Number(prompt("Digite o indice de uma tarefa já
 
 //e) Remova da lista o item de índice que o usuário escolheu.
 
-listaDeTarefas.splice([`${indiceDaTarefaRealizada}`]); // COMO EU FIZ SEM VER A RESOLUÇÃO
+listaDeTarefas.splice([`${indiceDaTarefaRealizada}`]); // COMO EU FIZ SEM VER A RESOLUÇÃO //NÃO ENTENDI A FORMA DE RESOLVER NO EXERCICIO RESOLVIDO
 
 
 //f) Imprima o array no console
